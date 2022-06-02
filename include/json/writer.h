@@ -164,10 +164,6 @@ public:
  * \sa Reader, Value
  * \deprecated Use StreamWriterBuilder.
  */
-#if defined(_MSC_VER)
-#pragma warning(push)
-#pragma warning(disable : 4996) // Deriving from deprecated class
-#endif
 class JSON_API FastWriter
     : public Writer {
 public:
@@ -196,9 +192,6 @@ private:
   bool dropNullPlaceholders_{false};
   bool omitEndingLineFeed_{false};
 };
-#if defined(_MSC_VER)
-#pragma warning(pop)
-#endif
 
 /** \brief Writes a Value in <a HREF="http://www.json.org">JSON</a> format in a
  *human friendly way.
@@ -224,10 +217,6 @@ private:
  * \sa Reader, Value, Value::setComment()
  * \deprecated Use StreamWriterBuilder.
  */
-#if defined(_MSC_VER)
-#pragma warning(push)
-#pragma warning(disable : 4996) // Deriving from deprecated class
-#endif
 class JSON_API
     StyledWriter : public Writer {
 public:
@@ -264,9 +253,6 @@ private:
   unsigned int indentSize_{3};
   bool addChildValues_{false};
 };
-#if defined(_MSC_VER)
-#pragma warning(pop)
-#endif
 
 /** \brief Writes a Value in <a HREF="http://www.json.org">JSON</a> format in a
  human friendly way,
@@ -293,10 +279,6 @@ private:
  * \sa Reader, Value, Value::setComment()
  * \deprecated Use StreamWriterBuilder.
  */
-#if defined(_MSC_VER)
-#pragma warning(push)
-#pragma warning(disable : 4996) // Deriving from deprecated class
-#endif
 class JSON_API
     StyledStreamWriter {
 public:
@@ -339,9 +321,6 @@ private:
   bool addChildValues_ : 1;
   bool indented_ : 1;
 };
-#if defined(_MSC_VER)
-#pragma warning(pop)
-#endif
 
 #if defined(JSON_HAS_INT64)
 String JSON_API valueToString(Int value);

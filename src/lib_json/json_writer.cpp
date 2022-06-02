@@ -78,11 +78,6 @@
 #endif
 #endif
 
-#if defined(_MSC_VER)
-// Disable warning about strdup being deprecated.
-#pragma warning(disable : 4996)
-#endif
-
 namespace Json {
 
 #if __cplusplus >= 201103L || (defined(_CPPLIB_VER) && _CPPLIB_VER >= 520)

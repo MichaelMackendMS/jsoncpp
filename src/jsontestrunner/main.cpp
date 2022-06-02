@@ -6,9 +6,6 @@
 #if defined(__GNUC__)
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-#elif defined(_MSC_VER)
-#pragma warning(disable : 4996)
-#endif
 
 /* This executable is used for testing parser/writer using real JSON files.
  */

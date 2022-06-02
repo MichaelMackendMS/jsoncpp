@@ -37,11 +37,6 @@
 #endif //_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES
 #endif //_MSC_VER
 
-#if defined(_MSC_VER)
-// Disable warning about strdup being deprecated.
-#pragma warning(disable : 4996)
-#endif
-
 // Define JSONCPP_DEPRECATED_STACK_LIMIT as an appropriate integer at compile
 // time to change the stack limit
 #if !defined(JSONCPP_DEPRECATED_STACK_LIMIT)
